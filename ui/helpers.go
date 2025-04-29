@@ -120,3 +120,9 @@ func Layout(lay func(gtx layout.Context) layout.Dimensions) {
 	}()
 	app.Main()
 }
+// WindowInvalidate forțează redesenarea ferestrei curente.
+func WindowInvalidate() {
+    if mainWindow != nil {
+        mainWindow.Invalidate()
+    }
+}
